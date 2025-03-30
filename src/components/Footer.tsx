@@ -1,8 +1,11 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  // Check if we're inside a Router context
+  const location = useLocation();
+  
   return (
     <footer className="w-full px-6 py-12 bg-secondary/50 dark:bg-secondary/20 mt-20">
       <div className="max-w-6xl mx-auto">
@@ -23,12 +26,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/transactions" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Transactions
                 </Link>
               </li>
               <li>
-                <Link to="/goals" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Savings Goals
                 </Link>
               </li>
@@ -39,17 +42,17 @@ const Footer = () => {
             <h4 className="font-medium">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/help" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Help Center
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/guides" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Financial Guides
                 </Link>
               </li>
@@ -60,12 +63,12 @@ const Footer = () => {
             <h4 className="font-medium">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
               </li>
